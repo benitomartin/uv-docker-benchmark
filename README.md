@@ -3,8 +3,8 @@
 This project demonstrates different approaches to building Python applications using `uv` package manager with Docker, featuring three distinct Dockerfile strategies:
 
 - `singlestage.Dockerfile`: Single-stage build that keeps `uv` in the final image
-- `multistage.Dockerfile`: Multi-stage build using uv-managed Python, removes `uv` in the final stage
 - `standalone.Dockerfile`: Multi-stage build using system Python, removes `uv` in the final stage
+- `multistage.Dockerfile`: Multi-stage build using uv-managed Python, removes `uv` in the final stage
 
 The following [blog](https://medium.com/@benitomartin/deep-dive-into-uv-dockerfiles-from-astral-image-size-performance-best-practices-5790974b9579) describes the differences between these strategies.
 
@@ -45,15 +45,15 @@ The script will:
 
 Size (including all dependencies):
 
-- multistage   → 4'126.72 MB
-- standalone   → 4'157.44 MB
-- singlestage  → 4'188.16 MB
+- Multi-Stage   → 4'126.72 MB
+- Standalone   → 4'157.44 MB
+- Single-Stage  → 4'188.16 MB
 
 Build time:
 
-- multistage   → 2m 9.5s
-- standalone   → 2m 16.6s
-- singlestage  → 3m 0.5s
+- Multi-Stage   → 2m 9.5s
+- Standalone   → 2m 16.6s
+- Single-Stage  → 3m 0.5s
 
 ## Dependencies
 
