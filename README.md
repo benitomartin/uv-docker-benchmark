@@ -50,9 +50,10 @@ Size (including all dependencies):
 - singlestage  → 4'188.16 MB
 
 Build time:
-• multistage   → 2m 9.5s
-• standalone   → 2m 16.6s
-• singlestage  → 3m 0.5s
+
+- multistage   → 2m 9.5s
+- standalone   → 2m 16.6s
+- singlestage  → 3m 0.5s
 
 ## Dependencies
 
