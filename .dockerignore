@@ -1,0 +1,40 @@
+# Python
+.venv
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+
+# Development/IDE
+.git
+.gitignore
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Docker
+Dockerfile*
+.dockerignore
+docker-compose*
+
+# Project specific
+benchmark_docker_images.py
+README.md
+*.md
+.env
+.env.*
