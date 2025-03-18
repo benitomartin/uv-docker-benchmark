@@ -6,7 +6,7 @@ This project demonstrates different approaches to building Python applications u
 - `standalone.Dockerfile`: Multi-stage build using system Python, removes `uv` in the final stage
 - `multistage.Dockerfile`: Multi-stage build using uv-managed Python, removes `uv` in the final stage
 
-The following [blog](https://medium.com/@benitomartin/deep-dive-into-uv-dockerfiles-from-astral-image-size-performance-best-practices-5790974b9579) describes the differences between these strategies.
+The following [blog](https://medium.com/@benitomartin/deep-dive-into-uv-dockerfiles-by-astral-image-size-performance-best-practices-5790974b9579) describes the differences between these strategies.
 
 ## Project Structure
 
@@ -33,6 +33,9 @@ The project includes a comprehensive benchmarking tool (`benchmark_docker_images
 To run the benchmark:
 
 ```bash
+uv venv
+source .venv/bin/activate
+uv sync
 uv run benchmark_docker_images.py
 ```
 
