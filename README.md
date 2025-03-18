@@ -1,5 +1,7 @@
 # Docker + uv Benchmark
 
+![Image](https://github.com/user-attachments/assets/e7ef5d59-d122-44c3-97e4-432a770c6ac8)
+
 This project demonstrates different approaches to building Python applications using `uv` package manager with Docker, featuring three distinct Dockerfile strategies:
 
 - `singlestage.Dockerfile`: Single-stage build that keeps `uv` in the final image
